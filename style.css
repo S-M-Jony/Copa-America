@@ -1,0 +1,233 @@
+body{
+    font-family: 'Poppins','Roboto','Source Sans Pro', sans-serif;
+}
+
+/* navbar section */
+.navSection{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* menu section */
+
+ul.nav {
+    margin:0;
+	padding:0;
+	list-style:none;
+	height:36px; 
+    line-height:36px; 
+	font-size:13px;
+   
+}
+ul.nav li {
+	float:left;
+}
+
+ul.nav a {
+	display:block;
+	padding:0 28px;
+	text-decoration:none;
+    color:#fff;
+    font-family: 'Poppins','Roboto','Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+ul.nav a:hover,
+ul.nav li.current a {
+	background:orangered;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+ /* button-sec */
+
+.login-btn button{
+    font-family: 'Poppins','Roboto','Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding:15px 30px;
+    background-color: #E02C6D;
+    color: whitesmoke;
+    border: none;
+    pointer-events:cursor;
+    transition: width 2s, height 4s;
+    width:170px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.login-btn button:hover{
+    width: 200px;
+    transition: all ease 2s;
+    opacity: .7;
+}
+
+
+
+/* banner section */
+
+.banner-section{
+    background-color: #2D25A0;
+    color: whitesmoke;
+}
+
+.banner-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* player info */
+
+.player-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    margin:0px 10%;
+    
+}
+
+.players-info img{
+    width:300px;
+    height: 256px;
+}
+
+.players-info p{
+    word-wrap: break-word;
+}
+
+.players-info{ 
+   margin: 20px; 
+   border: 1px solid #CCCCCC;
+   padding: 10px;
+   /* border-radius: 5%; */
+   text-align: center;
+   background-color: #FFFFFF;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* highlights sec */
+
+.highlights-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin:0% 10%;
+}
+ /* news section */
+
+ 
+
+ /* contact-sec */
+
+ .contact-sec{
+    display: flex;
+    justify-content: space-around;
+    padding: 0% 10%;
+    align-items: center;
+}
+.contact-form{
+    width: 80%;
+}
+ input[type=text], select, textarea {
+     width: 80%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  } 
+
+
+  /* footer-sec */
+
+  .footer-section{
+      text-align: center;
+  }
+
+  .footer-logo img{
+      width: 40%;
+  }
+
+  .social-icon img{
+      width:5%;
+  }
+
+  .social-icon a{
+      text-decoration: none;
+  }
+
+
+  /* media-queries */
+
+  /* mobile-device */
+
+  @media only screen and (max-width:688px){
+            .navigation{
+                display: none;
+            }
+            .banner-content{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .watch-btn, .watch-live{
+                margin-bottom: 10px;
+            }
+            .player-details{
+                grid-template-columns: 1fr;
+            }
+            .highlights-section{
+                flex-direction: column;
+            }
+            .contact-sec{
+                flex-direction: column;
+                width:50%;
+            }
+            .contact-form{
+                margin-top: 20px;
+            }
+  }
+ 
+  /* tablet device  */
+
+  @media only screen and (min-width:688px) and (max-width:992px){
+        .navigation{
+            display: none;
+        }
+        
+        .banner-content{
+            display: flex;
+            justify-content: space-evenly; 
+        }
+        .player-details{
+            grid-template-columns: 1fr 1fr;
+        }
+        .contact-sec{
+            flex-direction: column;
+            width:50%;
+        }
+        .contact-text{
+           align-items: center;
+           justify-content: center;
+           margin-left: 50%;
+        }
+        .contact-form{
+            margin-top: 20px;
+        }
+  }
